@@ -1,0 +1,23 @@
+.is-loading-group.loading {
+    opacity: 0.50 !important;
+    pointer-events: none !important;
+}
+
+.is-loading-group.loading::before {
+    height: 50px;
+    width: 50px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: 5.5em;
+    margin-top: -.5em;
+    content: '';
+    background: url(../images/cube-loading.svg) center center;
+    background-size: cover;
+    line-height: 1;
+    text-align: center;
+    font-size: 2em;
+    color: rgba(0, 0, 0, .75);
+    z-index: 99;
+}
